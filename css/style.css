@@ -4,19 +4,36 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+img {
+    width: 100%;
+}
+header {
+    background-color: #2D3047;
+    height: 10vh;
+    padding: 0 100px;
+}
+main {
+    background-color: #3C6E71;
+    height: 90vh;
+}
+.logo-header {
+    width: 90px;
+    padding: 10px;
+}
 .wrapper {
     width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 50px;
 }
-
 .album {
     width: 20%;
-    padding: 20px;
+    padding: 10px;
+}
+.album-bg {
+    background-color: #cbd4c2af;
+    padding: 10px;
+    height: 100%;
 }
 
-.album-img img {
-    width: 100%;
-}

@@ -11,28 +11,12 @@
     <title>PHP AJAX DISCHI</title>
 </head>
 <body>
-
 <?php include './database.php'; ?>
-    
-    
-<div class="wrapper">
-    <?php foreach($db as $album) { ?>
-    
-    <div class="album">
-        <div class="album-img">
-            <img src="<?php echo $album['poster']; ?>" alt="cover album">
-        </div>
-        <div class="album-text">
-            <h2><?php echo $album['title']; ?></h2>
-            <p><?php echo $album['author']; ?></p>
-            <p><?php echo $album['genre']; ?></p>
-            <p><?php echo $album['year']; ?></p>
-        </div>
-    </div>
 
-    <?php } ?>
-    
-</div>
+<?php include './partials/header.php'; ?>
+
+<?php include './partials/main.php'; ?>
+
 
 </body>
 </html>
