@@ -13,10 +13,6 @@
 <body>
 
 <?php include './database.php'; ?>
-
-<pre>
-<?php print_r($db[0]); ?>
-</pre>
     
     
 <div class="wrapper">
@@ -24,7 +20,7 @@
     
     <div class="album">
         <div class="album-img">
-            <img style="width:200px" src="<?php echo $album['poster']; ?>" alt="cover album">
+            <img src="<?php echo $album['poster']; ?>" alt="cover album">
         </div>
         <div class="album-text">
             <h2><?php echo $album['title']; ?></h2>
