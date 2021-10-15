@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,14 +12,26 @@
 </head>
 <body>
 
+<?php include './database.php'; ?>
 
-<?php 
-    include './database.php';
-
-    var_dump ($db);
-
-?>
-
+<pre>
+<?php print_r($db[0]); ?>
+</pre>
     
+    
+<div class="wrapper">
+    <div class="album">
+        <div class="album-img">
+            <img style="width:200px" src="<?php echo $db[0]['poster']; ?>" alt="cover album">
+        </div>
+        <div class="album-text">
+            <h2><?php echo $db[0]['title']; ?></h2>
+            <p><?php echo $db[0]['author']; ?></p>
+            <p><?php echo $db[0]['genre']; ?></p>
+            <p><?php echo $db[0]['year']; ?></p>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
